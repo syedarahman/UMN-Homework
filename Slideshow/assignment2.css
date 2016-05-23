@@ -1,0 +1,32 @@
+img#currentSlide 
+{
+	height: 300px;
+	width:500px;
+}
+
+.currentSlideStuff 
+{
+	display: inline-block;
+}
+
+img.thumb 
+{
+	padding: 5px;
+	height: 50px;
+	width: 50px;
+}
+
+img#current.thumb 
+{ 
+	border: 5px solid red;
+}
+
+div#info 
+{
+	display:inline-block;
+}
+
+text#building_info {
+	font-size: 20px;
+	font-weight: bold;
+} 

@@ -1,0 +1,58 @@
+<html>
+	<head>
+        <title> Assignment 2</title>
+		<link type="text/css" rel="stylesheet" href="assignment2.css"/>
+		<script type="text/javascript" src="assignment2.js"></script>
+	</head>
+
+	<body>
+		<div class="everything">
+			<div id="buttons">
+				<button onclick="startSlide()">Start</button>
+				<button onclick="nextSlide()">Next</button>
+				<button onclick="previousSlide()">Previous</button> 
+			</div> <br>
+            
+			<div>
+				Select Information Type:
+				<select id="info_type" onChange="pickCategory()">
+	     		<option value="None" selected="selected">None</option>
+	      	    <option value="Architect">Architect</option>
+	      	    <option value="Year">Year</option>
+	      	    <option value="Description">Description</option>
+	    	  </select> <br> <br>
+			</div>
+            
+            <div id="thumbnails"> </div>
+            <script type="text/javascript">
+				loadPicturesIntoArray();
+			</script>
+
+			<div>
+				<div class="moreButtons">
+					<button onclick="startSlides()">Start Slideshow</button>
+					<button onclick="stopSlides()">Stop Slideshow</button> <br> <br>
+                    
+                    Slow <input type="range" min="0" max="10" value="5"> Fast
+                    <script type="text/javascript">
+                        function showValue(newValue)
+                        {
+	                        document.getElementById("range").innerHTML=newValue;
+                            timelength = setInterval(newValue);
+                        }
+                    </script>
+                    
+				</div> <br> <br>
+				<table>
+					<tr>
+						<td><div class="currentSlideStuff">
+                                <img id="currentSlide" alt="armory.jpg" src="armory.jpg">
+                            </div>
+                        </td>
+                        <td><div id="info"></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

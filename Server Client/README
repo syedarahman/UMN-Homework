@@ -1,0 +1,20 @@
+CSCI 4131 Internet Programming
+
+How to compile:
+$ make
+
+How to run program:
+$ ./web_server <port> <path_to_testing>/testing <num_dispatch> <num_worker> <queue_len>
+	Example of how to run program:
+	$ ./web_server 9000 /home/rahm0107/Desktop/Project4/testing 100 100 100
+
+In another terminal, run:
+wget -i <path-to-urls>/urls -O results 
+	Example of how to run:
+	wget -i /home/rahm0107/Desktop/Project4/testing/urls -O myres
+
+Brief explanation: 
+This program is a multithreaded web server. 
+We are creating dispatcher, which act like the "producer", and worker threads which act like the "consumer". 
+As the server gets requests, the dispatcher places them in a bounded buffer for the worker threads to access. 
+The requested file is logged and sent back to the server. 

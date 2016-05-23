@@ -1,0 +1,102 @@
+* {
+    font-family: calibri;
+}
+
+h1 {
+    color: #dc143c;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    color: black;
+}
+
+tr {
+    height: 80px;
+    text-align: center;
+}
+
+th {
+    font-size: 18px;
+    color: black;
+}
+
+td {
+    color: black;
+    border: 1px ;
+    width: 130px;
+    border-radius: 5px;
+    background-color: #aaf0d1;
+    border-color: #3abda0;
+}
+
+td span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+table {
+    background-color: white;
+    margin: 0px auto;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+}
+
+p {
+    margin: 0px auto;
+    text-align: center;
+    font-style: italic;
+}
+
+form {
+    margin: 0px auto;
+    border: 1px solid black;
+    padding: 20px 20px 20px 20px;
+    width: 270px;
+    text-align: center;
+    display: block;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+#navigationBar {
+    border-color: #aaf0d1;
+    /*background-color: #aaf0d1;*/
+}
+
+
+/*Google maps styling. */
+#map {
+    height: 150%;
+    width: 75%;
+    margin: 0px auto;
+}
+
+/*Content inside info window for each building.*/
+.infoContent {
+    text-align: center;
+}
+
+html, body {
+    height: 75%;
+    margin: 0;
+    padding: 0;  
+}
+
+#floating-panel {
+  z-index: 5;
+  background-color: #fff;
+  padding: 0px;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+
+

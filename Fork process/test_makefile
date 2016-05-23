@@ -1,0 +1,22 @@
+test1: fakefile.o
+
+test2:
+	invalid command
+
+test3:
+   echo won't work because of leading space
+
+test4:
+
+test4:
+
+test5:
+	echo command line test
+
+test6: test7 test8
+
+test7:
+
+test8:
+
+

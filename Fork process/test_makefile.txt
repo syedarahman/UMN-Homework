@@ -1,0 +1,14 @@
+test1: fakefile.o
+
+test2:
+	invalid command
+	
+test3:
+	echo command line test
+
+test4: test5 test6
+
+test5:
+
+test6:
+
